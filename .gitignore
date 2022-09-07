@@ -1,0 +1,10 @@
+node_modules/
+build/
+dist/
+lib/
+bundle/
+/docs
+temp/
+.DS_Store
+.parcel-cache
+.idea

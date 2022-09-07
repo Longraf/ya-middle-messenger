@@ -1,0 +1,16 @@
+{
+  "name": "learn-on-middle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --port 3000"
+  },
+  "author": "Timofeev Yuriy",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}
