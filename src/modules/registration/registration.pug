@@ -7,7 +7,16 @@ block registration
         div.registration__input
             +input(label="Email" type='email' placeholder='Ваш e-mail')
         div.registration__input
+            +input(label="Логин" type='text' placeholder='Придумайте логин')
+        div.registration__input
+            +input(label="Имя" type='text' placeholder='Введите имя')
+        div.registration__input
+            +input(label="Фамилия" type='text' placeholder='Введите фимилию')
+        div.registration__input
+            +input(label="Телефон" type='phone' placeholder='Введите телефон')
+        div.registration__input
             +input(label="Пароль" type='password' placeholder='Придумайте пароль')
         div.registration__input
             +input(label="Пароль" type='password' placeholder='Повторите пароль')
-        a(href="auth.pug").link Войти
+        a(href="chat.pug").link.registration__button Зарегистрироваться
+        a(href="auth.pug").link.registration__button Авторизоваться

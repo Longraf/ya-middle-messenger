@@ -7,6 +7,10 @@
   cursor: auto;
   transition: color ease 0.25s, background-color ease 0.25s, border ease 0.25s;
 
+  color: $main-black;
+
+  margin-bottom: 2rem;
+
   &::placeholder{
     color: $helper-color-gray;
   }
@@ -32,12 +36,15 @@
     }
   }
 
-  &__label {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    color: #808080;
-  }
   &__label-text{
     padding-bottom: 1.0rem;
+    font-size: 1.8rem;
+    line-height: 2.0rem;
+  }
+
+
+  &__error-message {
+    color: $helper-color-gray;
+    font-size: 1.4rem;
   }
 }
