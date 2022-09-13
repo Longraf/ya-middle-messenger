@@ -2,15 +2,27 @@
   "name": "learn-on-middle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "parcel index.html --port 3000"
+    "dev": "parcel src/app.js --port 3000",
+    "start": "parcel src/pages/* --open --port 3000",
+    "build": "parcel build src/* -d build --public-url ./"
   },
   "author": "Timofeev Yuriy",
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "handlebars": "^4.7.7",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.7.0",
+    "path-browserify": "^1.0.1",
+    "postcss-import": "^15.0.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
+    "express": "^4.18.1",
     "pug": "^3.0.2"
   }
 }

@@ -1,0 +1,25 @@
+html {
+  font-size: 10px;
+}
+
+.link {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color:$helper-color-gray;
+  border: 1px solid $helper-color-gray;
+
+  text-decoration: none;
+  transition: color ease 0.25s, background-color ease 0.25s, border ease 0.25s;
+
+  cursor: pointer;
+
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+
+  &:hover {
+    border: 1px solid $main-color-blue;
+    color:$main-color-blue;
+  }
+}

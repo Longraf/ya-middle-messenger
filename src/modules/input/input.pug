@@ -1,0 +1,13 @@
+mixin input
+    label.input__label
+        .input__label-text #{attributes.label}
+        div(class=attributes.state ? 'input__wrapper input__wrapper--' + attributes.state : 'input__wrapper input__wrapper--default')
+            input.input.input--default.input--error.input--valid(
+                placeholder=attributes.placeholder
+                class=attributes.class
+                type=attributes.type
+                name=attributes.name
+                id=attributes.id
+                value=attributes.value
+                required=attributes.required)
+            p.input__error-message Пожалуйста, заполните поле
