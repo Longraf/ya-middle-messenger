@@ -2,11 +2,10 @@
   "name": "learn-on-middle",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
   "scripts": {
-    "dev": "parcel src/app.js --port 3000",
-    "start": "parcel src/pages/* --open --port 3000",
-    "build": "parcel build src/* -d build --public-url ./"
+    "dev": "parcel src/pages/index.pug --no-cache --port 4000",
+    "start": "parcel src/pages/* --open --port 4000",
+    "build": "parcel build src/pages/index.pug && node ./server.js"
   },
   "author": "Timofeev Yuriy",
   "devDependencies": {
