@@ -31,3 +31,6 @@
    ```
    npm run build
    ```
+
+# 3. Netlify
+https://endearing-sable-512bea.netlify.app/
