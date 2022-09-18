@@ -1,0 +1,5 @@
+include ../input/input
+.chat-field
+    ul.chat-post
+        include ./chat-list
+        +input(type='text', placeholder='Введите сообщение' name='text').chat-post__input.input--thin

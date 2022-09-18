@@ -1,4 +1,25 @@
+include ../input/input
+include ../button/button
+
 section.container
     h1 Страница профиля
-    a(href="chat.pug").link.auth-form__button Вернуться в чат
-    a(href="auth.pug").link.registration__button На страницу авторизации
+    a(href="chat.pug").link Вернуться в чат
+    a(href="auth.pug").link На страницу авторизации
+    div.lk
+        div.lk__input
+            +input(label='Имя' type='text' placeholder='Введите имя' name='first_name')
+        div.lk__input
+            +input(label='Фамилия' type='text' placeholder='Введите фимилию' name='second_name')
+        div.lk__input
+            +input(label='Логин' type='text' placeholder='Придумайте логин' name='display_name')
+        div.lk__input
+            +input(label='Логин' type='text' placeholder='Придумайте логин' name='login')
+        div.lk__input
+            +input(label='Email' type='email' placeholder='Ваш e-mail' name='email')
+        div.lk__input
+            +input(label='Телефон' type='phone' placeholder='Введите телефон' name='phone')
+        div.lk__input
+            +input(label='Текущий пароль' type='password' placeholder='Текущий пароль' name='oldPassword')
+        div.lk__input
+            +input(label='Новый пароль' type='password' placeholder='Новый пароль' name='newPassword')
+        +button(type='submit').link.lk__button Применить настройки

@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "parcel src/pages/index.pug --no-cache --port 4000",
-    "start": "parcel src/pages/* --open --port 4000",
-    "build": "parcel build src/pages/index.pug && node ./server.js"
+    "start": "parcel src/pages/* --port 4000",
+    "build": "parcel build src/pages/* && node ./server.js"
   },
   "author": "Timofeev Yuriy",
   "devDependencies": {

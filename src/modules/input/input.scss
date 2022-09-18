@@ -11,6 +11,8 @@
 
   margin-bottom: 2rem;
 
+  box-sizing: border-box;
+
   &::placeholder{
     color: $helper-color-gray;
   }
@@ -32,8 +34,12 @@
 
     &:hover, &:focus {
       transition: border ease 0.25s;
-      border: 0.2rem solid $main-color-blue;
+      border-color: $main-color-blue;
     }
+  }
+
+  &--thin.input {
+    border-width: 0.1rem;
   }
 
   &__label-text{

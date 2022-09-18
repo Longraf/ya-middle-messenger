@@ -1,4 +1,10 @@
-section.container
-    h1 Мой чат
-    a(href="auth.pug").link.registration__button Выйти
-    a(href="lk.pug").link.registration__button Личный кабинет
+section
+    .chat-settings
+        a(href="auth.pug").link.registration__button Выйти
+        a(href="lk.pug").link.registration__button Личный кабинет
+    div.chat-wrapper
+        ul.chat-list
+            include ./chat-list
+            include ./chat-list
+            include ./chat-list
+        include ./chat-field
