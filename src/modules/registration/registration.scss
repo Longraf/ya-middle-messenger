@@ -1,0 +1,23 @@
+.registration {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3.4rem;
+
+  &__input {
+    width: 100%;
+    margin-bottom: 3.0rem;
+  }
+
+  &__button {
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+

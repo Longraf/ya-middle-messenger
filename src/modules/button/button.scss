@@ -1,0 +1,49 @@
+.button{
+  width: auto;
+  height: auto;
+
+  outline: none;
+  border: none;
+  cursor: default;
+
+  transition: color ease 0.25s, background-color ease 0.25s, border ease 0.25s;
+
+  &--default{
+    width: 100%;
+    height: auto;
+
+    min-height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 3.2rem;
+
+    border-radius: 0.5rem;
+  }
+
+  &--blue {
+    background-color: white;
+    border: 0.1rem solid $main-color-blue;
+    color: $main-color-blue;
+  }
+
+    &--other{
+    width: 100%;
+    height: auto;
+
+    min-height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 3.2rem;
+
+    border-radius: 0.5rem;
+
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}

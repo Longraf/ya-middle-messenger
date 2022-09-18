@@ -1,0 +1,56 @@
+.input {
+  width: auto;
+  height: auto;
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: auto;
+  transition: color ease 0.25s, background-color ease 0.25s, border ease 0.25s;
+
+  color: $main-black;
+
+  margin-bottom: 2rem;
+
+  box-sizing: border-box;
+
+  &::placeholder{
+    color: $helper-color-gray;
+  }
+
+  &--default {
+    width: 100%;
+    height: auto;
+
+    min-height: 4rem;
+    border: 0.2rem solid $main-gray-color;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: black;
+    padding: 0 1.5rem;
+    background: transparent;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+
+    &:hover, &:focus {
+      transition: border ease 0.25s;
+      border-color: $main-color-blue;
+    }
+  }
+
+  &--thin.input {
+    border-width: 0.1rem;
+  }
+
+  &__label-text{
+    padding-bottom: 1.0rem;
+    font-size: 1.8rem;
+    line-height: 2.0rem;
+  }
+
+
+  &__error-message {
+    color: $helper-color-gray;
+    font-size: 1.4rem;
+  }
+}
